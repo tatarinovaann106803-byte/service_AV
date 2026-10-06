@@ -16,7 +16,7 @@ from .config import STATIC
 from .optimization import optimize, public_result
 from .public_schemas import PublicRequest
 from .schemas import InputModel
-from .storage import get_calculation, save_calculation, select_variant
+from .storage import get_calculation, json_compatible, save_calculation, select_variant
 from .weather import WeatherUnavailable, fetch_weather, season_weather
 
 logger = logging.getLogger(__name__)
@@ -67,7 +67,7 @@ def calculate(request: PublicRequest):
     if not capacity.acquire(blocking=False):
         raise HTTPException(429, "Сервис занят расчётами. Повторите запрос немного позже.")
     try:
-        record = optimize(request)
+        record = json_compatible(optimize(request))
         calculation_id = save_calculation(request.model_dump(), record)
         return {"success": True, "data": public_result(request, record, calculation_id)}
     except WeatherUnavailable as exc:
