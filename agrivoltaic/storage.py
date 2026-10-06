@@ -8,7 +8,22 @@ from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
 
+import numpy as np
+
 from .config import ROOT
+
+
+def _numpy_json_default(value):
+    if isinstance(value, np.ndarray):
+        return value.tolist()
+    if isinstance(value, np.generic):
+        return value.item()
+    raise TypeError(f"Object of type {type(value).__name__} is not JSON serializable")
+
+
+def json_compatible(value):
+    """Normalize nested NumPy values without accepting NaN or stringifying objects."""
+    return json.loads(json.dumps(value, ensure_ascii=False, allow_nan=False, default=_numpy_json_default))
 
 
 def private_directory():
@@ -45,7 +60,7 @@ def save_calculation(request: dict, private_result: dict) -> str:
                 record["created_at"],
                 request["sector"],
                 request["product_name"],
-                json.dumps(record, ensure_ascii=False, allow_nan=False),
+                json.dumps(record, ensure_ascii=False, allow_nan=False, default=_numpy_json_default),
             ),
         )
     return calculation_id
@@ -80,6 +95,6 @@ def select_variant(calculation_id, variant_id):
         record["selected_at"] = datetime.now(timezone.utc).isoformat()
         connection.execute(
             "UPDATE calculations SET record = ? WHERE id = ?",
-            (json.dumps(record, ensure_ascii=False, allow_nan=False), calculation_id),
+            (json.dumps(record, ensure_ascii=False, allow_nan=False, default=_numpy_json_default), calculation_id),
         )
     return record
