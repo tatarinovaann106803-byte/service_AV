@@ -1,0 +1,23 @@
+{
+  "contract_version": 1,
+  "model_name": "microclimate",
+  "crop_name": null,
+  "sklearn_version": "1.6.1",
+  "features": [
+    "coverage",
+    "height",
+    "air_temperature_open_c",
+    "relative_humidity_open_pct",
+    "ghi_kwh_m2_day",
+    "wind_speed_m_s",
+    "soil_moisture_open_pct"
+  ],
+  "targets": {
+    "air_temperature_delta_c": "degC",
+    "soil_temperature_delta_c": "degC",
+    "et_reduction_pct": "%"
+  },
+  "created_at": "2026-10-05T18:46:26.875593+00:00",
+  "status": "insufficient_data",
+  "reason": "Нет проверенного набора наблюдений. Заполните шаблон reviewed по первоисточникам."
+}

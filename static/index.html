@@ -1,0 +1,57 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Агривольтаика — выберите свой компромисс</title><link rel="stylesheet" href="/static/styles.css"><script src="/static/app.js" defer></script></head>
+<body><header><a class="brand" href="/calculator"><span class="mark">АВ</span>Агривольтаика <span class="tag">Поддержка решений</span></a></header><main>
+<div class="intro"><div><p class="eyebrow">ПРОДУКЦИЯ · ЭНЕРГИЯ · ДОХОД</p><h1>Найдите свой баланс.</h1><p class="lead">Сравните компромиссные варианты для вашего хозяйства.<br>Посмотрите, как они меняются при другой погоде и ценах.</p></div><aside><span class="dot"></span> Решение за вами<p>Больше энергии, сохранение продуктивности или доходность — сравните показатели и выберите подходящий вариант.</p></aside></div>
+<div class="workspace"><form id="project-form">
+<section class="card"><div class="section-title"><span>01</span><h2>Ваше хозяйство</h2></div><div class="fields">
+<label>Направление<select name="sector" id="sector"><option value="crop">Растениеводство</option><option value="aqua">Аквакультура</option><option value="forest">Лесное хозяйство</option></select></label>
+<label>Площадь, га<input name="area_ha" type="number" min="0.001" max="1000000" step="any" value="10" required></label>
+<label>Культура или вид<select name="product_name" id="product-list" required></select></label>
+<label>Страна<input name="country" value="Russian Federation" required></label>
+<label>Широта<input name="lat" type="number" min="-90" max="90" step="any" value="45" required></label>
+<label>Долгота<input name="lon" type="number" min="-180" max="180" step="any" value="38" required></label>
+<label id="baseline-mode-field">Базовая продуктивность<select name="baseline_mode" id="baseline-mode"><option value="fao">Средняя по стране</option><option value="manual">Данные моего хозяйства</option></select></label>
+<label id="baseline-field"><span id="yield-label">Базовая продуктивность, кг/га/год</span><input name="base_productivity" type="number" min="0.001" max="1000000000" step="any" value="4000"></label>
+<label><span id="price-label">Цена продукции, руб/кг</span><input name="product_price" type="number" min="0" step="any" value="15" required></label>
+<label>Тариф энергии, руб/кВт·ч<input name="energy_price" type="number" min="0" step="any" value="6" required></label>
+</div><p class="hint" id="baseline-note">Средняя урожайность страны — ориентир. Если есть данные вашего поля, выберите ручной ввод.</p></section>
+<section class="card"><div class="section-title"><span>02</span><h2>Условия участка</h2></div><div class="fields">
+<label>Погодные данные<select name="weather_source" id="weather-source"><option value="nasa">Загрузить автоматически</option><option value="manual">Ввести вручную</option></select></label>
+<label id="radiation-field">Радиация, кВт·ч/м²/год<input name="radiation_annual" type="number" min="1" max="4000" step="any" value="1400"></label>
+<label>Год метеоданных<input name="weather_year" type="number" min="1984" max="2100" value="2024" required></label>
+<label>Начало сезона<select name="season_start_month" id="season-start"></select></label><label>Конец сезона<select name="season_end_month" id="season-end"></select></label>
+<label>Средняя температура за сезон, °C<input name="growing_season_temperature_c" type="number" min="-20" max="50" step="any" value="22" required></label>
+<label>Осадки за сезон, мм<input name="growing_season_rainfall_mm" type="number" min="0" max="10000" step="any" value="300" required></label>
+<label>Полив за сезон, мм<input name="irrigation_mm" type="number" min="0" max="10000" step="any" value="250" required></label>
+</div><button type="button" id="load-weather" class="secondary">Загрузить погоду</button><p class="hint" id="weather-status" role="status">Погода загружается по координатам и выбранному сезону.</p></section>
+<section class="card"><div class="section-title"><span>03</span><h2>Экономические условия</h2></div><div class="fields">
+<label>Горизонт расчёта, лет<input name="project_years" type="number" min="1" max="100" value="25" required></label>
+<label>Максимальный бюджет, руб<input name="budget_rub" type="number" min="1" max="1000000000000" step="any" placeholder="Без ограничения"></label>
+<label>Стоимость капитала<select name="capital_method" id="capital-method"><option value="direct">Ставка дисконтирования</option><option value="wacc">Рассчитать WACC</option></select></label>
+<label id="direct-rate">Ставка, %<input name="discount_rate_pct" type="number" min="0" max="100" step="any" value="10"></label>
+</div><div id="wacc-fields" class="fields" hidden>
+<label>Доля собственного капитала, %<input name="equity_share_pct" type="number" min="0" max="100" step="any" value="60"></label>
+<label>Стоимость собственного капитала, %<input name="cost_of_equity_pct" type="number" min="0" max="100" step="any" value="15"></label>
+<label>Стоимость долга, %<input name="cost_of_debt_pct" type="number" min="0" max="100" step="any" value="12"></label>
+<label>Налоговая ставка для WACC, %<input name="tax_rate_pct" type="number" min="0" max="100" step="any" value="0"></label></div>
+<p class="hint">Постоянные цены, без учёта инфляции: ставка капитала должна соответствовать этому основанию. Доходность проекта оценивается через дополнительный денежный поток относительно хозяйства без АВ.</p></section>
+<section class="card crop-only"><div class="section-title"><span>04</span><h2>Вода и погодные потери</h2></div>
+<label class="check"><input type="checkbox" name="water_enabled" id="water-enabled"> Рассчитать экономию полива</label>
+<div id="water-fields" hidden><div class="fields">
+<label>Суммарная ET без АВ, мм/сезон<input name="baseline_et_mm" type="number" min="1" step="any" value="500"></label>
+<label>Испарение почвы в составе ET, мм<input name="soil_evaporation_mm" type="number" min="0" step="any" value="150"></label>
+<label>Эффективные осадки, мм<input name="effective_rainfall_mm" type="number" min="0" step="any" value="250"></label>
+<label>Эффективность полива, доля<input name="irrigation_efficiency" type="number" min="0.01" max="1" step="any" value="0.8"></label>
+<label>Переменные затраты на воду, руб/м³<input name="water_cost_rub_m3" type="number" min="0" step="any" value="10"></label>
+</div><p class="hint">Экономия различается между вариантами и погодными сценариями. Осадки здесь — часть, доступная растениям, а не общая сумма.</p></div>
+<label class="check"><input type="checkbox" name="risks_enabled" id="risks-enabled"> Сравнить потери от заморозков, засухи и града</label>
+<div id="risks-fields" hidden><p class="hint">Защитный эффект по умолчанию не предполагается. Предельные снижения — ваши сценарные допущения; фактическое расчётное снижение зависит от варианта.</p><div id="hazards"></div>
+<label class="check"><input type="checkbox" name="events_are_mutually_exclusive"> Классы событий не пересекаются</label>
+<label class="check"><input type="checkbox" name="include_in_cash_flow"> Учесть ожидаемые потери в доходе</label>
+<p class="hint">Для включения в доход задайте продуктивность до этих потерь. Средняя продуктивность уже может включать погодные потери.</p></div></section>
+<div class="submit-bar"><button type="submit" id="calculate">Найти компромиссные варианты →</button><p>Окончательный выбор остаётся за вами</p></div></form>
+<aside class="results" aria-live="polite"><div class="card result-intro"><p class="eyebrow">СРАВНЕНИЕ ВАРИАНТОВ</p><h2 id="result-title">Три цели. Ваш выбор.</h2><p id="result-note">Заполните данные хозяйства. Сервис подберёт варианты, между которыми есть компромисс по продукции, энергии и доходу.</p><p id="progress" hidden>Сравниваем варианты и проверяем погодные и экономические сценарии…</p><p id="stale" class="notice" hidden>Данные изменены. Пересчитайте варианты перед выбором.</p><p id="error" role="alert" hidden></p></div>
+<div id="result" hidden><div class="card"><h3>Энергия и продуктивность</h3><svg id="pareto-chart" viewBox="0 0 500 240" role="img" aria-label="Компромиссы между продуктивностью и выработкой энергии"></svg><p class="hint">Каждая точка — вариант. Нажмите, чтобы посмотреть его показатели. Зелёный цвет — NPV не ниже нуля.</p><div id="variant-buttons" class="variant-buttons"></div><details><summary>Сравнить все варианты по трём целям</summary><div class="table-scroll"><table><thead><tr><th>Вариант</th><th>Продуктивность</th><th>МВт·ч/год</th><th>NPV, млн ₽</th><th>Поток первого года, млн ₽</th></tr></thead><tbody id="comparison-table"></tbody></table></div></details></div>
+<div class="card"><p class="eyebrow" id="variant-title"></p><div class="metrics"><div class="metric"><span>Продуктивность</span><strong id="yield"></strong><small id="yield-change"></small></div><div class="metric"><span>Годовая выработка</span><strong id="generation"></strong><small id="power"></small></div><div class="metric primary"><span>NPV проекта</span><strong id="npv"></strong><small id="rate-used"></small></div><div class="metric"><span>Поток в первый год</span><strong id="income"></strong><small>прирост относительно хозяйства без АВ</small></div></div><dl id="effects"></dl><div id="risk-results"></div><button id="choose" type="button">Выбрать этот вариант</button><p id="selection-status" class="hint"></p></div>
+<div class="card"><h3>Устойчивость к изменению условий</h3><p id="robustness-note"></p><div class="table-scroll"><table><thead><tr><th>Сценарий</th><th>Продуктивность</th><th>Энергия, МВт·ч</th><th>NPV, млн ₽</th></tr></thead><tbody id="scenario-table"></tbody></table></div><p class="hint">Сценарии равноправны. Доля положительных результатов не означает вероятность успеха.</p></div>
+<div class="card"><p class="hint" id="calculation-id"></p><button id="download" type="button" class="secondary">Скачать сравнение JSON</button></div></div></aside></div>
+<footer>Агривольтаика / Поддержка принятия решений <span>Приближённые компромиссы · проверка на сценариях</span></footer></main></body></html>

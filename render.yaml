@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: agrivoltaic-api
+    runtime: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: AGRIVOLTAIC_PRIVATE_DIR
+        value: /var/data/agrivoltaic
+      - key: TILDA_ORIGINS
+        sync: false
+    disk:
+      name: private-calculations
+      mountPath: /var/data
+      sizeGB: 1

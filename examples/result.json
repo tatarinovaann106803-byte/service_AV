@@ -1,0 +1,1160 @@
+{
+  "calculation_id": "example-not-saved",
+  "product_name": "Пшеница",
+  "sector": "crop",
+  "area_ha": 10.0,
+  "baseline_source": "Средняя продуктивность страны",
+  "variants": [
+    {
+      "id": "35a195c9e1784056ac7ed20fdfa7b573",
+      "energy": {
+        "installed_power_kw": 3024.2200000000003,
+        "annual_generation_kwh": 3874339.1616449677
+      },
+      "productivity": {
+        "baseline": 3064.1,
+        "estimated": 2716.604646651098,
+        "unit": "кг/га/год",
+        "change_pct": -11.340862026334065
+      },
+      "economics": {
+        "capex": 181453200.00000003,
+        "net_income": 20472112.666867472,
+        "npv_rub": -3268229.256212347,
+        "irr_pct": 9.75865417155587,
+        "roi_years": 9.068907245115689,
+        "discounted_payback_years": null,
+        "discount_rate_pct": 10.0,
+        "project_years": 25
+      },
+      "water": {
+        "status": "not_configured"
+      },
+      "risks": {
+        "status": "not_configured"
+      },
+      "robustness": {
+        "scenario_count": 9,
+        "positive_npv_scenarios": 4,
+        "npv_min": -131659370.0340307,
+        "npv_max": 91052730.13890313,
+        "productivity_min": 2716.604646651098,
+        "productivity_max": 2795.049986295753,
+        "generation_min": 3237958.479762642,
+        "generation_max": 4309422.32361271
+      },
+      "scenarios": [
+        {
+          "name": "Обычная погода / Базовая экономика",
+          "productivity": 2716.604646651098,
+          "generation_kwh": 3874339.1616449677,
+          "npv_rub": -3268229.256212347
+        },
+        {
+          "name": "Обычная погода / Рост затрат и снижение цен",
+          "productivity": 2716.604646651098,
+          "generation_kwh": 3874339.1616449677,
+          "npv_rub": -109979486.86057818
+        },
+        {
+          "name": "Обычная погода / Благоприятная экономика",
+          "productivity": 2716.604646651098,
+          "generation_kwh": 3874339.1616449677,
+          "npv_rub": 61483548.636639155
+        },
+        {
+          "name": "Жарко и сухо / Базовая экономика",
+          "productivity": 2795.049986295753,
+          "generation_kwh": 4309422.32361271,
+          "npv_rub": 19676083.745136686
+        },
+        {
+          "name": "Жарко и сухо / Рост затрат и снижение цен",
+          "productivity": 2795.049986295753,
+          "generation_kwh": 4309422.32361271,
+          "npv_rub": -95079379.74008764
+        },
+        {
+          "name": "Жарко и сухо / Благоприятная экономика",
+          "productivity": 2795.049986295753,
+          "generation_kwh": 4309422.32361271,
+          "npv_rub": 91052730.13890313
+        },
+        {
+          "name": "Прохладно и облачно / Базовая экономика",
+          "productivity": 2723.8185406357397,
+          "generation_kwh": 3237958.479762642,
+          "npv_rub": -36662014.65680753
+        },
+        {
+          "name": "Прохладно и облачно / Рост затрат и снижение цен",
+          "productivity": 2723.8185406357397,
+          "generation_kwh": 3237958.479762642,
+          "npv_rub": -131659370.0340307
+        },
+        {
+          "name": "Прохладно и облачно / Благоприятная экономика",
+          "productivity": 2723.8185406357397,
+          "generation_kwh": 3237958.479762642,
+          "npv_rub": 18448558.135387648
+        }
+      ]
+    },
+    {
+      "id": "ee6c3023885847249e4556a4df1e6be8",
+      "energy": {
+        "installed_power_kw": 3024.2200000000003,
+        "annual_generation_kwh": 3883499.6265670876
+      },
+      "productivity": {
+        "baseline": 3064.1,
+        "estimated": 2718.51755090033,
+        "unit": "кг/га/год",
+        "change_pct": -11.278432463028942
+      },
+      "economics": {
+        "capex": 191708468.91964388,
+        "net_income": 20373533.358242914,
+        "npv_rub": -14436373.349851701,
+        "irr_pct": 8.981217583347856,
+        "roi_years": 9.645738882003377,
+        "discounted_payback_years": null,
+        "discount_rate_pct": 10.0,
+        "project_years": 25
+      },
+      "water": {
+        "status": "not_configured"
+      },
+      "risks": {
+        "status": "not_configured"
+      },
+      "robustness": {
+        "scenario_count": 9,
+        "positive_npv_scenarios": 4,
+        "npv_min": -145116509.49575636,
+        "npv_max": 80532927.669174,
+        "productivity_min": 2718.51755090033,
+        "productivity_max": 2790.1148368139884,
+        "generation_min": 3243864.1321656904,
+        "generation_max": 4321121.43664181
+      },
+      "scenarios": [
+        {
+          "name": "Обычная погода / Базовая экономика",
+          "productivity": 2718.51755090033,
+          "generation_kwh": 3883499.6265670876,
+          "npv_rub": -14436373.349851701
+        },
+        {
+          "name": "Обычная погода / Рост затрат и снижение цен",
+          "productivity": 2718.51755090033,
+          "generation_kwh": 3883499.6265670876,
+          "npv_rub": -123324928.26372015
+        },
+        {
+          "name": "Обычная погода / Благоприятная экономика",
+          "productivity": 2718.51755090033,
+          "generation_kwh": 3883499.6265670876,
+          "npv_rub": 50804082.14897045
+        },
+        {
+          "name": "Жарко и сухо / Базовая экономика",
+          "productivity": 2790.1148368139884,
+          "generation_kwh": 4321121.43664181,
+          "npv_rub": 8631869.224241545
+        },
+        {
+          "name": "Жарко и сухо / Рост затрат и снижение цен",
+          "productivity": 2790.1148368139884,
+          "generation_kwh": 4321121.43664181,
+          "npv_rub": -108344708.92338778
+        },
+        {
+          "name": "Жарко и сухо / Благоприятная экономика",
+          "productivity": 2790.1148368139884,
+          "generation_kwh": 4321121.43664181,
+          "npv_rub": 80532927.669174
+        },
+        {
+          "name": "Прохладно и облачно / Базовая экономика",
+          "productivity": 2724.8964845489822,
+          "generation_kwh": 3243864.1321656904,
+          "npv_rub": -48002140.63081882
+        },
+        {
+          "name": "Прохладно и облачно / Рост затрат и снижение цен",
+          "productivity": 2724.8964845489822,
+          "generation_kwh": 3243864.1321656904,
+          "npv_rub": -145116509.49575636
+        },
+        {
+          "name": "Прохладно и облачно / Благоприятная экономика",
+          "productivity": 2724.8964845489822,
+          "generation_kwh": 3243864.1321656904,
+          "npv_rub": 7547450.611994121
+        }
+      ]
+    },
+    {
+      "id": "d74e61c2a56b4f8581881462887c74f7",
+      "energy": {
+        "installed_power_kw": 3049.585,
+        "annual_generation_kwh": 4162651.930027664
+      },
+      "productivity": {
+        "baseline": 3064.1,
+        "estimated": 2693.4364993659533,
+        "unit": "кг/га/год",
+        "change_pct": -12.096977926113595
+      },
+      "economics": {
+        "capex": 187568020.04185477,
+        "net_income": 22106791.75444306,
+        "npv_rub": 4886369.634984775,
+        "irr_pct": 10.346694524108491,
+        "roi_years": 8.671030608856201,
+        "discounted_payback_years": 22.47695242697912,
+        "discount_rate_pct": 10.0,
+        "project_years": 25
+      },
+      "water": {
+        "status": "not_configured"
+      },
+      "risks": {
+        "status": "not_configured"
+      },
+      "robustness": {
+        "scenario_count": 9,
+        "positive_npv_scenarios": 5,
+        "npv_min": -133318491.01479545,
+        "npv_max": 108888339.59334415,
+        "productivity_min": 2693.4364993659533,
+        "productivity_max": 2769.299798863892,
+        "generation_min": 3428755.4946402567,
+        "generation_max": 4673386.543008143
+      },
+      "scenarios": [
+        {
+          "name": "Обычная погода / Базовая экономика",
+          "productivity": 2693.4364993659533,
+          "generation_kwh": 4162651.930027664,
+          "npv_rub": 4886369.634984775
+        },
+        {
+          "name": "Обычная погода / Рост затрат и снижение цен",
+          "productivity": 2693.4364993659533,
+          "generation_kwh": 4162651.930027664,
+          "npv_rub": -108320568.39147837
+        },
+        {
+          "name": "Обычная погода / Благоприятная экономика",
+          "productivity": 2693.4364993659533,
+          "generation_kwh": 4162651.930027664,
+          "npv_rub": 74206296.1789493
+        },
+        {
+          "name": "Жарко и сухо / Базовая экономика",
+          "productivity": 2769.299798863892,
+          "generation_kwh": 4673386.543008143,
+          "npv_rub": 31798109.987482257
+        },
+        {
+          "name": "Жарко и сухо / Рост затрат и снижение цен",
+          "productivity": 2769.299798863892,
+          "generation_kwh": 4673386.543008143,
+          "npv_rub": -90844818.97332563
+        },
+        {
+          "name": "Жарко и сухо / Благоприятная экономика",
+          "productivity": 2769.299798863892,
+          "generation_kwh": 4673386.543008143,
+          "npv_rub": 108888339.59334415
+        },
+        {
+          "name": "Прохладно и облачно / Базовая экономика",
+          "productivity": 2706.117244778629,
+          "generation_kwh": 3428755.4946402567,
+          "npv_rub": -33618572.02528977
+        },
+        {
+          "name": "Прохладно и облачно / Рост затрат и снижение цен",
+          "productivity": 2706.117244778629,
+          "generation_kwh": 3428755.4946402567,
+          "npv_rub": -133318491.01479545
+        },
+        {
+          "name": "Прохладно и облачно / Благоприятная экономика",
+          "productivity": 2706.117244778629,
+          "generation_kwh": 3428755.4946402567,
+          "npv_rub": 24584523.58655384
+        }
+      ]
+    },
+    {
+      "id": "7e583f4ddbf641c58dc1b1a4118e9411",
+      "energy": {
+        "installed_power_kw": 3044.69,
+        "annual_generation_kwh": 4260832.549469141
+      },
+      "productivity": {
+        "baseline": 3064.1,
+        "estimated": 2679.0118603935716,
+        "unit": "кг/га/год",
+        "change_pct": -12.56774059614334
+      },
+      "economics": {
+        "capex": 182681400.0,
+        "net_income": 22767011.075873885,
+        "npv_rub": 15572188.890106527,
+        "irr_pct": 11.124795659358478,
+        "roi_years": 8.187887984553056,
+        "discounted_payback_years": 18.644238768710178,
+        "discount_rate_pct": 10.0,
+        "project_years": 25
+      },
+      "water": {
+        "status": "not_configured"
+      },
+      "risks": {
+        "status": "not_configured"
+      },
+      "robustness": {
+        "scenario_count": 9,
+        "positive_npv_scenarios": 5,
+        "npv_min": -124751185.84381174,
+        "npv_max": 122890444.78514166,
+        "productivity_min": 2679.0118603935716,
+        "productivity_max": 2759.0827795466344,
+        "generation_min": 3489437.3251405586,
+        "generation_max": 4801031.393513336
+      },
+      "scenarios": [
+        {
+          "name": "Обычная погода / Базовая экономика",
+          "productivity": 2679.0118603935716,
+          "generation_kwh": 4260832.549469141,
+          "npv_rub": 15572188.890106527
+        },
+        {
+          "name": "Обычная погода / Рост затрат и снижение цен",
+          "productivity": 2679.0118603935716,
+          "generation_kwh": 4260832.549469141,
+          "npv_rub": -98479559.92391866
+        },
+        {
+          "name": "Обычная погода / Благоприятная экономика",
+          "productivity": 2679.0118603935716,
+          "generation_kwh": 4260832.549469141,
+          "npv_rub": 86207895.13450992
+        },
+        {
+          "name": "Жарко и сухо / Базовая экономика",
+          "productivity": 2759.0827795466344,
+          "generation_kwh": 4801031.393513336,
+          "npv_rub": 44036234.97094576
+        },
+        {
+          "name": "Жарко и сухо / Рост затрат и снижение цен",
+          "productivity": 2759.0827795466344,
+          "generation_kwh": 4801031.393513336,
+          "npv_rub": -79995794.06470595
+        },
+        {
+          "name": "Жарко и сухо / Благоприятная экономика",
+          "productivity": 2759.0827795466344,
+          "generation_kwh": 4801031.393513336,
+          "npv_rub": 122890444.78514166
+        },
+        {
+          "name": "Прохладно и облачно / Базовая экономика",
+          "productivity": 2696.1684867789354,
+          "generation_kwh": 3489437.3251405586,
+          "npv_rub": -24894969.18639414
+        },
+        {
+          "name": "Прохладно и облачно / Рост затрат и снижение цен",
+          "productivity": 2696.1684867789354,
+          "generation_kwh": 3489437.3251405586,
+          "npv_rub": -124751185.84381174
+        },
+        {
+          "name": "Прохладно и облачно / Благоприятная экономика",
+          "productivity": 2696.1684867789354,
+          "generation_kwh": 3489437.3251405586,
+          "npv_rub": 34057416.68567117
+        }
+      ]
+    },
+    {
+      "id": "8082323f2d2549d8bfb24cbdc3af7af3",
+      "energy": {
+        "installed_power_kw": 5419.655,
+        "annual_generation_kwh": 8863883.72463456
+      },
+      "productivity": {
+        "baseline": 3064.1,
+        "estimated": 2269.698280674138,
+        "unit": "кг/га/год",
+        "change_pct": -25.926102911976166
+      },
+      "economics": {
+        "capex": 325179300.0,
+        "net_income": 48186452.58990848,
+        "npv_rub": 94729149.93143596,
+        "irr_pct": 13.750108362015634,
+        "roi_years": 6.858660873277266,
+        "discounted_payback_years": 12.358857031549721,
+        "discount_rate_pct": 10.0,
+        "project_years": 25
+      },
+      "water": {
+        "status": "not_configured"
+      },
+      "risks": {
+        "status": "not_configured"
+      },
+      "robustness": {
+        "scenario_count": 9,
+        "positive_npv_scenarios": 5,
+        "npv_min": -196985271.4177092,
+        "npv_max": 334117167.1072551,
+        "productivity_min": 2269.698280674138,
+        "productivity_max": 2369.302468043817,
+        "generation_min": 6948743.473778677,
+        "generation_max": 10255459.125628814
+      },
+      "scenarios": [
+        {
+          "name": "Обычная погода / Базовая экономика",
+          "productivity": 2269.698280674138,
+          "generation_kwh": 8863883.72463456,
+          "npv_rub": 94729149.93143596
+        },
+        {
+          "name": "Обычная погода / Рост затрат и снижение цен",
+          "productivity": 2269.698280674138,
+          "generation_kwh": 8863883.72463456,
+          "npv_rub": -131797610.06789503
+        },
+        {
+          "name": "Обычная погода / Благоприятная экономика",
+          "productivity": 2269.698280674138,
+          "generation_kwh": 8863883.72463456,
+          "npv_rub": 239809212.9689131
+        },
+        {
+          "name": "Жарко и сухо / Базовая экономика",
+          "productivity": 2369.302468043817,
+          "generation_kwh": 10255459.125628814,
+          "npv_rub": 167908527.76560542
+        },
+        {
+          "name": "Жарко и сухо / Рост затрат и снижение цен",
+          "productivity": 2369.302468043817,
+          "generation_kwh": 10255459.125628814,
+          "npv_rub": -84282319.49167837
+        },
+        {
+          "name": "Жарко и сухо / Благоприятная экономика",
+          "productivity": 2369.302468043817,
+          "generation_kwh": 10255459.125628814,
+          "npv_rub": 334117167.1072551
+        },
+        {
+          "name": "Прохладно и облачно / Базовая экономика",
+          "productivity": 2351.6834769551156,
+          "generation_kwh": 6948743.473778677,
+          "npv_rub": -5684890.851212866
+        },
+        {
+          "name": "Прохладно и облачно / Рост затрат и снижение цен",
+          "productivity": 2351.6834769551156,
+          "generation_kwh": 6948743.473778677,
+          "npv_rub": -196985271.4177092
+        },
+        {
+          "name": "Прохладно и облачно / Благоприятная экономика",
+          "productivity": 2351.6834769551156,
+          "generation_kwh": 6948743.473778677,
+          "npv_rub": 110404780.79134826
+        }
+      ]
+    },
+    {
+      "id": "84b0e765c40c44e88876487608c53a07",
+      "energy": {
+        "installed_power_kw": 6277.17,
+        "annual_generation_kwh": 9633220.314940363
+      },
+      "productivity": {
+        "baseline": 3064.1,
+        "estimated": 2166.8382110774714,
+        "unit": "кг/га/год",
+        "change_pct": -29.283045230982296
+      },
+      "economics": {
+        "capex": 376630200.0,
+        "net_income": 52015279.6213038,
+        "npv_rub": 76515332.14322439,
+        "irr_pct": 12.640848089399725,
+        "roi_years": 7.37067094934046,
+        "discounted_payback_years": 14.338876892177508,
+        "discount_rate_pct": 10.0,
+        "project_years": 25
+      },
+      "water": {
+        "status": "not_configured"
+      },
+      "risks": {
+        "status": "not_configured"
+      },
+      "robustness": {
+        "scenario_count": 9,
+        "positive_npv_scenarios": 5,
+        "npv_min": -239618518.88006583,
+        "npv_max": 328133397.17625016,
+        "productivity_min": 2166.8382110774714,
+        "productivity_max": 2284.6715710033714,
+        "generation_min": 7711923.106440363,
+        "generation_max": 11007480.054187216
+      },
+      "scenarios": [
+        {
+          "name": "Обычная погода / Базовая экономика",
+          "productivity": 2166.8382110774714,
+          "generation_kwh": 9633220.314940363,
+          "npv_rub": 76515332.14322439
+        },
+        {
+          "name": "Обычная погода / Рост затрат и снижение цен",
+          "productivity": 2166.8382110774714,
+          "generation_kwh": 9633220.314940363,
+          "npv_rub": -174205732.3868462
+        },
+        {
+          "name": "Обычная погода / Благоприятная экономика",
+          "productivity": 2166.8382110774714,
+          "generation_kwh": 9633220.314940363,
+          "npv_rub": 234964645.76892254
+        },
+        {
+          "name": "Жарко и сухо / Базовая экономика",
+          "productivity": 2284.6715710033714,
+          "generation_kwh": 11007480.054187216,
+          "npv_rub": 148810631.3253348
+        },
+        {
+          "name": "Жарко и сухо / Рост затрат и снижение цен",
+          "productivity": 2284.6715710033714,
+          "generation_kwh": 11007480.054187216,
+          "npv_rub": -127263489.64049515
+        },
+        {
+          "name": "Жарко и сухо / Благоприятная экономика",
+          "productivity": 2284.6715710033714,
+          "generation_kwh": 11007480.054187216,
+          "npv_rub": 328133397.17625016
+        },
+        {
+          "name": "Прохладно и облачно / Базовая экономика",
+          "productivity": 2232.4438289670484,
+          "generation_kwh": 7711923.106440363,
+          "npv_rub": -24244188.91944125
+        },
+        {
+          "name": "Прохладно и облачно / Рост затрат и снижение цен",
+          "productivity": 2232.4438289670484,
+          "generation_kwh": 7711923.106440363,
+          "npv_rub": -239618518.88006583
+        },
+        {
+          "name": "Прохладно и облачно / Благоприятная экономика",
+          "productivity": 2232.4438289670484,
+          "generation_kwh": 7711923.106440363,
+          "npv_rub": 105114878.87343541
+        }
+      ]
+    },
+    {
+      "id": "d52f76ab7fce4747905d6a2df2531b33",
+      "energy": {
+        "installed_power_kw": 6384.86,
+        "annual_generation_kwh": 10240385.656756248
+      },
+      "productivity": {
+        "baseline": 3064.1,
+        "estimated": 2117.829024743025,
+        "unit": "кг/га/год",
+        "change_pct": -30.882509554419723
+      },
+      "economics": {
+        "capex": 383091600.0,
+        "net_income": 55553999.294248946,
+        "npv_rub": 100977542.58127214,
+        "irr_pct": 13.403159003912723,
+        "roi_years": 7.011444709831669,
+        "discounted_payback_years": 12.904463033404445,
+        "discount_rate_pct": 10.0,
+        "project_years": 25
+      },
+      "water": {
+        "status": "not_configured"
+      },
+      "risks": {
+        "status": "not_configured"
+      },
+      "robustness": {
+        "scenario_count": 9,
+        "positive_npv_scenarios": 5,
+        "npv_min": -235475534.1106831,
+        "npv_max": 374327810.69033515,
+        "productivity_min": 2117.829024743025,
+        "productivity_max": 2223.4067448934884,
+        "generation_min": 8086736.282796018,
+        "generation_max": 11797248.283601655
+      },
+      "scenarios": [
+        {
+          "name": "Обычная погода / Базовая экономика",
+          "productivity": 2117.829024743025,
+          "generation_kwh": 10240385.656756248,
+          "npv_rub": 100977542.58127214
+        },
+        {
+          "name": "Обычная погода / Рост затрат и снижение цен",
+          "productivity": 2117.829024743025,
+          "generation_kwh": 10240385.656756248,
+          "npv_rub": -162166707.72589502
+        },
+        {
+          "name": "Обычная погода / Благоприятная экономика",
+          "productivity": 2117.829024743025,
+          "generation_kwh": 10240385.656756248,
+          "npv_rub": 268828552.0752962
+        },
+        {
+          "name": "Жарко и сухо / Базовая экономика",
+          "productivity": 2223.4067448934884,
+          "generation_kwh": 11797248.283601655,
+          "npv_rub": 182840976.4412942
+        },
+        {
+          "name": "Жарко и сухо / Рост затрат и снижение цен",
+          "productivity": 2223.4067448934884,
+          "generation_kwh": 11797248.283601655,
+          "npv_rub": -109013164.88216656
+        },
+        {
+          "name": "Жарко и сухо / Благоприятная экономика",
+          "productivity": 2223.4067448934884,
+          "generation_kwh": 11797248.283601655,
+          "npv_rub": 374327810.69033515
+        },
+        {
+          "name": "Прохладно и облачно / Базовая экономика",
+          "productivity": 2207.053281067894,
+          "generation_kwh": 8086736.282796018,
+          "npv_rub": -11945980.263974326
+        },
+        {
+          "name": "Прохладно и облачно / Рост затрат и снижение цен",
+          "productivity": 2207.053281067894,
+          "generation_kwh": 8086736.282796018,
+          "npv_rub": -235475534.1106831
+        },
+        {
+          "name": "Прохладно и облачно / Благоприятная экономика",
+          "productivity": 2207.053281067894,
+          "generation_kwh": 8086736.282796018,
+          "npv_rub": 123303023.62168628
+        }
+      ]
+    },
+    {
+      "id": "7e54b30fb631414981be198ec2b1873f",
+      "energy": {
+        "installed_power_kw": 6565.085,
+        "annual_generation_kwh": 10683656.966277001
+      },
+      "productivity": {
+        "baseline": 3064.1,
+        "estimated": 2087.2694579397444,
+        "unit": "кг/га/год",
+        "change_pct": -31.879851899750523
+      },
+      "economics": {
+        "capex": 393905100.0,
+        "net_income": 58046840.71635297,
+        "npv_rub": 111917416.39322874,
+        "irr_pct": 13.660295975577863,
+        "roi_years": 6.897629026521751,
+        "discounted_payback_years": 12.498072529172116,
+        "discount_rate_pct": 10.0,
+        "project_years": 25
+      },
+      "water": {
+        "status": "not_configured"
+      },
+      "risks": {
+        "status": "not_configured"
+      },
+      "robustness": {
+        "scenario_count": 9,
+        "positive_npv_scenarios": 5,
+        "npv_min": -240040765.937562,
+        "npv_max": 400442745.79903114,
+        "productivity_min": 2087.2694579397444,
+        "productivity_max": 2192.010268296466,
+        "generation_min": 8375830.042748899,
+        "generation_max": 12360498.126783295
+      },
+      "scenarios": [
+        {
+          "name": "Обычная погода / Базовая экономика",
+          "productivity": 2087.2694579397444,
+          "generation_kwh": 10683656.966277001,
+          "npv_rub": 111917416.39322874
+        },
+        {
+          "name": "Обычная погода / Рост затрат и снижение цен",
+          "productivity": 2087.2694579397444,
+          "generation_kwh": 10683656.966277001,
+          "npv_rub": -161492367.66212317
+        },
+        {
+          "name": "Обычная погода / Благоприятная экономика",
+          "productivity": 2087.2694579397444,
+          "generation_kwh": 10683656.966277001,
+          "npv_rub": 286841896.1781783
+        },
+        {
+          "name": "Жарко и сухо / Базовая экономика",
+          "productivity": 2184.725438517685,
+          "generation_kwh": 12360498.126783295,
+          "npv_rub": 200067462.55363432
+        },
+        {
+          "name": "Жарко и сухо / Рост затрат и снижение цен",
+          "productivity": 2184.725438517685,
+          "generation_kwh": 12360498.126783295,
+          "npv_rub": -104257778.37296283
+        },
+        {
+          "name": "Жарко и сухо / Благоприятная экономика",
+          "productivity": 2184.725438517685,
+          "generation_kwh": 12360498.126783295,
+          "npv_rub": 400442745.79903114
+        },
+        {
+          "name": "Прохладно и облачно / Базовая экономика",
+          "productivity": 2192.010268296466,
+          "generation_kwh": 8375830.042748899,
+          "npv_rub": -9077755.865686458
+        },
+        {
+          "name": "Прохладно и облачно / Рост затрат и снижение цен",
+          "productivity": 2192.010268296466,
+          "generation_kwh": 8375830.042748899,
+          "npv_rub": -240040765.937562
+        },
+        {
+          "name": "Прохладно и облачно / Благоприятная экономика",
+          "productivity": 2192.010268296466,
+          "generation_kwh": 8375830.042748899,
+          "npv_rub": 130914423.81392892
+        }
+      ]
+    },
+    {
+      "id": "3fed6fbb95fe4370b21d9283c45a18a7",
+      "energy": {
+        "installed_power_kw": 8181.77,
+        "annual_generation_kwh": 10977385.465351008
+      },
+      "productivity": {
+        "baseline": 3064.1,
+        "estimated": 2007.642974745811,
+        "unit": "кг/га/год",
+        "change_pct": -34.47854264724353
+      },
+      "economics": {
+        "capex": 528034450.39524055,
+        "net_income": 57785327.482389316,
+        "npv_rub": -25165009.898270916,
+        "irr_pct": 9.358284783300086,
+        "roi_years": 9.358687820168317,
+        "discounted_payback_years": null,
+        "discount_rate_pct": 10.0,
+        "project_years": 25
+      },
+      "water": {
+        "status": "not_configured"
+      },
+      "risks": {
+        "status": "not_configured"
+      },
+      "robustness": {
+        "scenario_count": 9,
+        "positive_npv_scenarios": 4,
+        "npv_min": -394908923.1346581,
+        "npv_max": 248012988.98133305,
+        "productivity_min": 2007.642974745811,
+        "productivity_max": 2150.9306911783947,
+        "generation_min": 9077867.85792695,
+        "generation_max": 12293320.691402616
+      },
+      "scenarios": [
+        {
+          "name": "Обычная погода / Базовая экономика",
+          "productivity": 2007.642974745811,
+          "generation_kwh": 10977385.465351008,
+          "npv_rub": -25165009.898270916
+        },
+        {
+          "name": "Обычная погода / Рост затрат и снижение цен",
+          "productivity": 2007.642974745811,
+          "generation_kwh": 10977385.465351008,
+          "npv_rub": -330209294.93280375
+        },
+        {
+          "name": "Обычная погода / Благоприятная экономика",
+          "productivity": 2007.642974745811,
+          "generation_kwh": 10977385.465351008,
+          "npv_rub": 158744740.37301907
+        },
+        {
+          "name": "Жарко и сухо / Базовая экономика",
+          "productivity": 2150.9306911783947,
+          "generation_kwh": 12293320.691402616,
+          "npv_rub": 44103494.44436787
+        },
+        {
+          "name": "Жарко и сухо / Рост затрат и снижение цен",
+          "productivity": 2150.9306911783947,
+          "generation_kwh": 12293320.691402616,
+          "npv_rub": -285230850.04226506
+        },
+        {
+          "name": "Жарко и сухо / Благоприятная экономика",
+          "productivity": 2150.9306911783947,
+          "generation_kwh": 12293320.691402616,
+          "npv_rub": 248012988.98133305
+        },
+        {
+          "name": "Прохладно и облачно / Базовая экономика",
+          "productivity": 2042.166521541292,
+          "generation_kwh": 9077867.85792695,
+          "npv_rub": -124823640.17618549
+        },
+        {
+          "name": "Прохладно и облачно / Рост затрат и снижение цен",
+          "productivity": 2042.166521541292,
+          "generation_kwh": 9077867.85792695,
+          "npv_rub": -394908923.1346581
+        },
+        {
+          "name": "Прохладно и облачно / Благоприятная экономика",
+          "productivity": 2042.166521541292,
+          "generation_kwh": 9077867.85792695,
+          "npv_rub": 30313499.158574235
+        }
+      ]
+    },
+    {
+      "id": "243dbb8c1f0e45ebb4657ee31838544e",
+      "energy": {
+        "installed_power_kw": 8595.175,
+        "annual_generation_kwh": 13613638.455973448
+      },
+      "productivity": {
+        "baseline": 3064.1,
+        "estimated": 1773.2848941160628,
+        "unit": "кг/га/год",
+        "change_pct": -42.12705544479414
+      },
+      "economics": {
+        "capex": 515710499.99999994,
+        "net_income": 73752550.9699581,
+        "npv_rub": 126894683.24094558,
+        "irr_pct": 13.182947576118076,
+        "roi_years": 7.112046014919104,
+        "discounted_payback_years": 13.289726285814847,
+        "discount_rate_pct": 10.0,
+        "project_years": 25
+      },
+      "water": {
+        "status": "not_configured"
+      },
+      "risks": {
+        "status": "not_configured"
+      },
+      "robustness": {
+        "scenario_count": 9,
+        "positive_npv_scenarios": 5,
+        "npv_min": -322464041.9241893,
+        "npv_max": 491855170.50563115,
+        "productivity_min": 1773.2848941160628,
+        "productivity_max": 1910.9616174921853,
+        "generation_min": 10725635.571988836,
+        "generation_max": 15704847.656196246
+      },
+      "scenarios": [
+        {
+          "name": "Обычная погода / Базовая экономика",
+          "productivity": 1773.2848941160628,
+          "generation_kwh": 13613638.455973448,
+          "npv_rub": 126894683.24094558
+        },
+        {
+          "name": "Обычная погода / Рост затрат и снижение цен",
+          "productivity": 1773.2848941160628,
+          "generation_kwh": 13613638.455973448,
+          "npv_rub": -224175147.98309258
+        },
+        {
+          "name": "Обычная погода / Благоприятная экономика",
+          "productivity": 1773.2848941160628,
+          "generation_kwh": 13613638.455973448,
+          "npv_rub": 350242569.9864696
+        },
+        {
+          "name": "Жарко и сухо / Базовая экономика",
+          "productivity": 1860.523452165378,
+          "generation_kwh": 15704847.656196246,
+          "npv_rub": 236780986.79072088
+        },
+        {
+          "name": "Жарко и сухо / Рост затрат и снижение цен",
+          "productivity": 1860.523452165378,
+          "generation_kwh": 15704847.656196246,
+          "npv_rub": -152829244.77968273
+        },
+        {
+          "name": "Жарко и сухо / Благоприятная экономика",
+          "productivity": 1860.523452165378,
+          "generation_kwh": 15704847.656196246,
+          "npv_rub": 491855170.50563115
+        },
+        {
+          "name": "Прохладно и облачно / Базовая экономика",
+          "productivity": 1910.9616174921853,
+          "generation_kwh": 10725635.571988836,
+          "npv_rub": -24509067.89955149
+        },
+        {
+          "name": "Прохладно и облачно / Рост затрат и снижение цен",
+          "productivity": 1910.9616174921853,
+          "generation_kwh": 10725635.571988836,
+          "npv_rub": -322464041.9241893
+        },
+        {
+          "name": "Прохладно и облачно / Благоприятная экономика",
+          "productivity": 1910.9616174921853,
+          "generation_kwh": 10725635.571988836,
+          "npv_rub": 155127356.4190799
+        }
+      ]
+    },
+    {
+      "id": "c3ad9544c4804e819dab8130c44e9762",
+      "energy": {
+        "installed_power_kw": 9403.295,
+        "annual_generation_kwh": 14601073.159514435
+      },
+      "productivity": {
+        "baseline": 3064.1,
+        "estimated": 1644.6985684678352,
+        "unit": "кг/га/год",
+        "change_pct": -46.32360012833017
+      },
+      "economics": {
+        "capex": 564197700.0,
+        "net_income": 78930563.24235678,
+        "npv_rub": 123461027.07126044,
+        "irr_pct": 12.83936997598608,
+        "roi_years": 7.2740900227153205,
+        "discounted_payback_years": 13.92669675400156,
+        "discount_rate_pct": 10.0,
+        "project_years": 25
+      },
+      "water": {
+        "status": "not_configured"
+      },
+      "risks": {
+        "status": "not_configured"
+      },
+      "robustness": {
+        "scenario_count": 9,
+        "positive_npv_scenarios": 5,
+        "npv_min": -358002500.53963774,
+        "npv_max": 510706199.5682296,
+        "productivity_min": 1644.6985684678352,
+        "productivity_max": 1783.5084175623278,
+        "generation_min": 11581396.60037458,
+        "generation_max": 16776840.980355259
+      },
+      "scenarios": [
+        {
+          "name": "Обычная погода / Базовая экономика",
+          "productivity": 1644.6985684678352,
+          "generation_kwh": 14601073.159514435,
+          "npv_rub": 123461027.07126044
+        },
+        {
+          "name": "Обычная погода / Рост затрат и снижение цен",
+          "productivity": 1644.6985684678352,
+          "generation_kwh": 14601073.159514435,
+          "npv_rub": -255227480.93843094
+        },
+        {
+          "name": "Обычная погода / Благоприятная экономика",
+          "productivity": 1644.6985684678352,
+          "generation_kwh": 14601073.159514435,
+          "npv_rub": 363372182.79297906
+        },
+        {
+          "name": "Жарко и сухо / Базовая экономика",
+          "productivity": 1732.7801527077638,
+          "generation_kwh": 16776840.980355259,
+          "npv_rub": 237786958.52185577
+        },
+        {
+          "name": "Жарко и сухо / Рост затрат и снижение цен",
+          "productivity": 1732.7801527077638,
+          "generation_kwh": 16776840.980355259,
+          "npv_rub": -180999195.31798363
+        },
+        {
+          "name": "Жарко и сухо / Благоприятная экономика",
+          "productivity": 1732.7801527077638,
+          "generation_kwh": 16776840.980355259,
+          "npv_rub": 510706199.5682296
+        },
+        {
+          "name": "Прохладно и облачно / Базовая экономика",
+          "productivity": 1783.5084175623278,
+          "generation_kwh": 11581396.60037458,
+          "npv_rub": -34852729.46986534
+        },
+        {
+          "name": "Прохладно и облачно / Рост затрат и снижение цен",
+          "productivity": 1783.5084175623278,
+          "generation_kwh": 11581396.60037458,
+          "npv_rub": -358002500.53963774
+        },
+        {
+          "name": "Прохладно и облачно / Благоприятная экономика",
+          "productivity": 1783.5084175623278,
+          "generation_kwh": 11581396.60037458,
+          "npv_rub": 159351956.10857067
+        }
+      ]
+    },
+    {
+      "id": "2c9e168205e8462a90cc7d82136e13f5",
+      "energy": {
+        "installed_power_kw": 9405.075,
+        "annual_generation_kwh": 14605172.950485026
+      },
+      "productivity": {
+        "baseline": 3064.1,
+        "estimated": 1646.3155370387606,
+        "unit": "кг/га/год",
+        "change_pct": -46.27082872495152
+      },
+      "economics": {
+        "capex": 581381562.2620853,
+        "net_income": 78697646.59953469,
+        "npv_rub": 104154885.25594944,
+        "irr_pct": 12.335447700788105,
+        "roi_years": 7.52358611961322,
+        "discounted_payback_years": 15.004402146509035,
+        "discount_rate_pct": 10.0,
+        "project_years": 25
+      },
+      "water": {
+        "status": "not_configured"
+      },
+      "risks": {
+        "status": "not_configured"
+      },
+      "robustness": {
+        "scenario_count": 9,
+        "positive_npv_scenarios": 5,
+        "npv_min": -380956279.6022954,
+        "npv_max": 492395644.3765932,
+        "productivity_min": 1646.3155370387606,
+        "productivity_max": 1785.9855637087712,
+        "generation_min": 11579394.571422173,
+        "generation_max": 16786084.504466165
+      },
+      "scenarios": [
+        {
+          "name": "Обычная погода / Базовая экономика",
+          "productivity": 1646.3155370387606,
+          "generation_kwh": 14605172.950485026,
+          "npv_rub": 104154885.25594944
+        },
+        {
+          "name": "Обычная погода / Рост затрат и снижение цен",
+          "productivity": 1646.3155370387606,
+          "generation_kwh": 14605172.950485026,
+          "npv_rub": -277974125.65668803
+        },
+        {
+          "name": "Обычная погода / Благоприятная экономика",
+          "productivity": 1646.3155370387606,
+          "generation_kwh": 14605172.950485026,
+          "npv_rub": 344713757.42054474
+        },
+        {
+          "name": "Жарко и сухо / Базовая экономика",
+          "productivity": 1734.3542971354673,
+          "generation_kwh": 16786084.504466165,
+          "npv_rub": 218750752.83464646
+        },
+        {
+          "name": "Жарко и сухо / Рост затрат и снижение цен",
+          "productivity": 1734.3542971354673,
+          "generation_kwh": 16786084.504466165,
+          "npv_rub": -203570591.56325722
+        },
+        {
+          "name": "Жарко и сухо / Благоприятная экономика",
+          "productivity": 1734.3542971354673,
+          "generation_kwh": 16786084.504466165,
+          "npv_rub": 492395644.3765932
+        },
+        {
+          "name": "Прохладно и облачно / Базовая экономика",
+          "productivity": 1785.9855637087712,
+          "generation_kwh": 11579394.571422173,
+          "npv_rub": -54477984.49424309
+        },
+        {
+          "name": "Прохладно и облачно / Рост затрат и снижение цен",
+          "productivity": 1785.9855637087712,
+          "generation_kwh": 11579394.571422173,
+          "npv_rub": -380956279.6022954
+        },
+        {
+          "name": "Прохладно и облачно / Благоприятная экономика",
+          "productivity": 1785.9855637087712,
+          "generation_kwh": 11579394.571422173,
+          "npv_rub": 140282290.8240869
+        }
+      ]
+    }
+  ],
+  "selected_variant_id": null,
+  "weather": {
+    "radiation_annual": 1400.0,
+    "growing_season_temperature_c": 22.0,
+    "growing_season_rainfall_mm": 300.0
+  },
+  "search": {
+    "algorithm": "NSGA-II",
+    "displayed": 12,
+    "approximate": true
+  }
+}

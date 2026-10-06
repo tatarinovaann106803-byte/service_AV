@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-06",
+  "python_tests_passed": 51,
+  "ruff": "passed",
+  "javascript_syntax": "passed",
+  "browser": "manual-weather calculation, 32-item crop select, simplified labels, variant preview; no FAO or methodology section",
+  "nasa_live": "failed: network/TLS; precipitation/season verified with fixtures",
+  "deployment": "Render and Tilda templates prepared, not deployed; map integration not live-tested",
+  "scientific_validation": "scenario response not field-validated"
+}

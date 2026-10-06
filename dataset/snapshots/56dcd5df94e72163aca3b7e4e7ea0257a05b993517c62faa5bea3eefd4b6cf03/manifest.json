@@ -1,0 +1,42 @@
+{
+  "sources": [
+    {
+      "id": "crop_farming",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSrhKbZjKkGqSytiGNDciKhx5LYm9bubt-WFqbuASR48nvkC8yEg16fZKnbRgXeMdNPSAVJbZlnw-Sc/pub?output=csv",
+      "required_columns": [
+        "DOI",
+        "Культура"
+      ],
+      "final_url": "https://doc-00-8k-sheets.googleusercontent.com/pub/f3kk9gtum31ktuqh54kn7i1e14/s1vc484m7j0u62620btt951bng/1791225580000/109294991195578427680/*/e@2PACX-1vSrhKbZjKkGqSytiGNDciKhx5LYm9bubt-WFqbuASR48nvkC8yEg16fZKnbRgXeMdNPSAVJbZlnw-Sc?output=csv",
+      "rows": 112,
+      "sha256": "c6237508909e2b4b5072fa4f29ab14d9adb069ae8a0cb53d8f139dda563a5fa1",
+      "retrieved_at": "2026-10-05T18:39:46.449758+00:00"
+    },
+    {
+      "id": "forestry",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR0wSk6qgGv0cZxkc4zRKwJso5edQ88ivsUDACEXts43BR4gZRfcGJ3JzjpPjYYpLnUvAe_mJJO0UJg/pub?output=csv",
+      "required_columns": [
+        "DOI",
+        "Woody_Species"
+      ],
+      "final_url": "https://doc-0k-8k-sheets.googleusercontent.com/pub/f3kk9gtum31ktuqh54kn7i1e14/a5on9osh0h618h4fm5djh94trk/1791225585000/109294991195578427680/*/e@2PACX-1vR0wSk6qgGv0cZxkc4zRKwJso5edQ88ivsUDACEXts43BR4gZRfcGJ3JzjpPjYYpLnUvAe_mJJO0UJg?output=csv",
+      "rows": 32,
+      "sha256": "60af328e202d0c7082895da31f98ce45b9c229be6e1a3ec13888f742f1d772bc",
+      "retrieved_at": "2026-10-05T18:39:50.358098+00:00"
+    },
+    {
+      "id": "aquaculture",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSdqh15EIG4xIACOBaFtWbKamveCBj7QVPq2vkyVhjk0_F5mrrlRqMJROWCXXkKDr3aBzqA3GCNNHyt/pub?output=csv",
+      "required_columns": [
+        "DOI",
+        "Aquatic organism"
+      ],
+      "final_url": "https://doc-08-8k-sheets.googleusercontent.com/pub/f3kk9gtum31ktuqh54kn7i1e14/vjfft9iblui5hjrq7upfgcbor4/1791225590000/109294991195578427680/*/e@2PACX-1vSdqh15EIG4xIACOBaFtWbKamveCBj7QVPq2vkyVhjk0_F5mrrlRqMJROWCXXkKDr3aBzqA3GCNNHyt?output=csv",
+      "rows": 34,
+      "sha256": "31b375d4698d30e6d6b1d6539114ed14952d806fa3015949ec731630846cb580",
+      "retrieved_at": "2026-10-05T18:39:54.012315+00:00"
+    }
+  ],
+  "rows": 178,
+  "raw_sha256": "cb6f55cf25ea5592749fbc3336975fdc8a304925a69761717d6d5b9d757a1a3e"
+}

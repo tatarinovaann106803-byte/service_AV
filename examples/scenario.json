@@ -1,0 +1,14 @@
+{
+  "sector": "crop",
+  "product_name": "Пшеница",
+  "lat": 45,
+  "lon": 38,
+  "area_ha": 10,
+  "product_price": 15,
+  "energy_price": 6,
+  "radiation_annual": 1400,
+  "growing_season_temperature_c": 22,
+  "growing_season_rainfall_mm": 300,
+  "season_start_month": 4,
+  "season_end_month": 9
+}

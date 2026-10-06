@@ -1,0 +1,26 @@
+[
+  {
+    "id": "crop_farming",
+    "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSrhKbZjKkGqSytiGNDciKhx5LYm9bubt-WFqbuASR48nvkC8yEg16fZKnbRgXeMdNPSAVJbZlnw-Sc/pub?output=csv",
+    "required_columns": [
+      "DOI",
+      "Культура"
+    ]
+  },
+  {
+    "id": "forestry",
+    "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR0wSk6qgGv0cZxkc4zRKwJso5edQ88ivsUDACEXts43BR4gZRfcGJ3JzjpPjYYpLnUvAe_mJJO0UJg/pub?output=csv",
+    "required_columns": [
+      "DOI",
+      "Woody_Species"
+    ]
+  },
+  {
+    "id": "aquaculture",
+    "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSdqh15EIG4xIACOBaFtWbKamveCBj7QVPq2vkyVhjk0_F5mrrlRqMJROWCXXkKDr3aBzqA3GCNNHyt/pub?output=csv",
+    "required_columns": [
+      "DOI",
+      "Aquatic organism"
+    ]
+  }
+]
